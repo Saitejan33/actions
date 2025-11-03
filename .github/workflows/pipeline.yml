@@ -8,12 +8,9 @@ jobs:
       steps:
          - name: checkout code
            uses: actions/checkout@v5
-           
-         - name: welocome message
-           run: echo "welocome"
 
-         - name: list files
-           run: ls 
-        
-         - name: read file
-           run: cat README.md
+         - name: multi line commands
+           run: |
+               echo "welocome"
+               ls 
+               cat README.md
